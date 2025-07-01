@@ -28,6 +28,13 @@ export default {
         ioscard: {
           DEFAULT: '#FFFFFF',
         },
+        iosBg: 'rgba(245, 245, 250, 0.85)', // iOS-like light background
+        iosCard: 'rgba(255, 255, 255, 0.7)', // Card background
+        iosCardDark: 'rgba(40, 48, 65, 0.85)', // Darker, friendly card background
+        iosAccent: '#007AFF', // iOS blue
+        iosText: '#222',
+        iosBorder: 'rgba(0,0,0,0.08)',
+        iosShadow: 'rgba(0,0,0,0.10)',
       },
       fontFamily: {
         sans: [
@@ -41,7 +48,16 @@ export default {
           'Arial',
           'sans-serif'
         ]
-      }
+      },
+      borderRadius: {
+        ios: '1.5rem',
+      },
+      boxShadow: {
+        ios: '0 4px 24px 0 rgba(0,0,0,0.10)',
+      },
+      backdropBlur: {
+        ios: '8px',
+      },
     },
   },
   plugins: [],

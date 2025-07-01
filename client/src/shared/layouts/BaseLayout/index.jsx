@@ -7,11 +7,13 @@ function BaseLayout({ children, onFileSelect, onCompanySelect, onBackToCompanies
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false)
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-iosBg backdrop-blur-ios">
       <Header />
       <div className="flex-1 flex relative">
-        <main className={`flex-1 transition-all duration-300 ease-in-out ${isSidebarCollapsed ? 'mr-16' : 'mr-64'} bg-gradient-to-br from-sky-100 to-white`}>
-          <div className="px-6 py-6">
+        <main
+          className={`flex-1 transition-all duration-300 ease-in-out ${isSidebarCollapsed ? 'mr-16' : 'mr-64'} overflow-y-auto bg-iosCardDark text-white px-4 py-6 md:px-8 md:py-12`}
+        >
+          <div className="h-full w-full max-w-5xl min-h-[60vh] mx-auto bg-white rounded-xl shadow p-4 md:p-10">
             {children}
           </div>
         </main>
