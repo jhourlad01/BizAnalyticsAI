@@ -1,9 +1,11 @@
 import './Header.css'
 
 function Header() {
+  const appTitle = import.meta.env.VITE_APP_TITLE || 'BizAnalytics AI'
+  
   return (
     <header className="header">
-      <h1>BizAnalytics AI</h1>
+      <h1>{appTitle}</h1>
       <nav className="nav">
         <a href="#dashboard">Dashboard</a>
         <a href="#analytics">Analytics</a>

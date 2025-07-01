@@ -17,7 +17,8 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: {
         ...globals.browser,
-        ...globals.vitest
+        ...globals.vitest,
+        ...globals.node
       },
       parserOptions: {
         ecmaVersion: 'latest',
