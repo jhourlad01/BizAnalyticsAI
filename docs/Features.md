@@ -28,7 +28,7 @@ This project is a proof-of-concept (POC) for an application that accepts uploade
 
 ## 1. Frontend (React via Vite)
 
-**Code the following:**
+
 - Upload form to select and send document files
 - Input field to ask questions
 - Output view for AI-generated answers
@@ -39,7 +39,7 @@ This project is a proof-of-concept (POC) for an application that accepts uploade
 
 ## 2. Backend API (FastAPI)
 
-**Code the following:**
+
 - `/upload` endpoint to receive and process uploaded files
 - `/ask` endpoint to process user questions
 - Function to extract text from documents using CloudConvert
@@ -53,7 +53,7 @@ This project is a proof-of-concept (POC) for an application that accepts uploade
 
 ## 3. CloudConvert API
 
-**Code the following:**
+
 - Upload file to CloudConvert for conversion to `.txt`
 - Wait for conversion to finish
 - Download and return the plain text result
@@ -62,7 +62,7 @@ This project is a proof-of-concept (POC) for an application that accepts uploade
 
 ## 4. Hugging Face Inference API
 
-**Code the following:**
+
 - Send text chunks to Hugging Face embedding model (e.g., `all-MiniLM-L6-v2`)
 - Receive vector embeddings for each chunk
 
@@ -70,7 +70,7 @@ This project is a proof-of-concept (POC) for an application that accepts uploade
 
 ## 5. Qdrant Cloud
 
-**Code the following:**
+
 - Store chunks with associated embeddings into a Qdrant collection
 - Search the collection by sending a new query embedding and returning top matches
 
@@ -78,7 +78,7 @@ This project is a proof-of-concept (POC) for an application that accepts uploade
 
 ## 6. OpenRouter API
 
-**Code the following:**
+
 - Send a prompt with relevant context + user question to OpenRouter
 - Return the generated response from the selected LLM (e.g., GPT-4, Mixtral)
 
@@ -86,7 +86,7 @@ This project is a proof-of-concept (POC) for an application that accepts uploade
 
 ## 7. Plotly (Optional)
 
-**Code the following:**
+
 - Parse uploaded document content into structured metrics (e.g., revenue, headcount, customer segments)
 - Generate visual charts (line, bar, pie) using Plotly
 - Return chart data to the frontend as JSON
