@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Header, Footer } from '../../navigation'
-import { Sidebar } from '../../ui'
+import Header from '../../navigation/Header'
+import Footer from '../../navigation/Footer'
+import Sidebar from '../../ui/Sidebar'
 
 function BaseLayout({ children }) {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false)
