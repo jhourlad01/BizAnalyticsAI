@@ -3,7 +3,7 @@ import Header from '../../navigation/Header'
 import Footer from '../../navigation/Footer'
 import Sidebar from '../../ui/Sidebar'
 
-function BaseLayout({ children }) {
+function BaseLayout({ children, onFileSelect, onCompanySelect, onBackToCompanies, selected, sidebarMode }) {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false)
 
   return (
@@ -18,6 +18,11 @@ function BaseLayout({ children }) {
         <Sidebar 
           isCollapsed={isSidebarCollapsed}
           onToggle={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+          onFileSelect={onFileSelect}
+          onCompanySelect={onCompanySelect}
+          onBackToCompanies={onBackToCompanies}
+          selected={selected}
+          sidebarMode={sidebarMode}
         />
       </div>
       <Footer />
