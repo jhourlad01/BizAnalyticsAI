@@ -1,4 +1,4 @@
-# Tooling & Deployment Guide
+# AI-Powered Document Analytics Platform (POC) -- Tooling & Deployment Guide
 
 This guide provides step-by-step instructions for deploying and connecting all major services in your stack.
 
